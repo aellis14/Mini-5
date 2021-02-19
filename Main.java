@@ -16,5 +16,5 @@ class Main {
       password = pwordInit;
     }
     
-    public static int 
+    public static int user 
   }
