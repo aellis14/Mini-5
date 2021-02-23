@@ -1,4 +1,7 @@
 public class Main {
+   public static void main(String[] args) {
+    saySorry(10);
+  }
 
   // Create a checkAge() method with an integer variable called age
   static void checkAge(int age) {
@@ -14,9 +17,16 @@ public class Main {
 
   }
 
-  public static void main(String[] args) {
     checkAge(20); // Call the checkAge method and pass along an age of 20
-  }
-}
 
 // Outputs "Access granted - You are old enough!"
+  public static void saySorry(int n) {
+    if(n == 0) {
+      System.out.println("Done!");
+    } else {
+       System.out.println("sorry");
+       n--;
+       sayJump(n);
+    }
+  }
+}
