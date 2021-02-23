@@ -1,20 +1,22 @@
-class Main {
-  public static void main(String[] args) 
-  {
-    Scanner scan = new Scanner(System.in);
+public class Main {
 
-    System.out.println("Whats your username?");
-    String username = scan.next();
-    System.out.println("Whats your password");
-    String password = scan.next();
+  // Create a checkAge() method with an integer variable called age
+  static void checkAge(int age) {
 
+    // If age is less than 18, print "access denied"
+    if (age < 18) {
+      System.out.println("Access denied - You are not old enough!");
+
+    // If age is greater than, or equal to, 18, print "access granted"
+    } else {
+      System.out.println("Access granted - You are old enough!");
     }
 
-    public User(String nameInit, String pwordInit)
-    {
-      username = nameInit;
-      password = pwordInit;
-    }
-    
-    public static int user 
   }
+
+  public static void main(String[] args) {
+    checkAge(20); // Call the checkAge method and pass along an age of 20
+  }
+}
+
+// Outputs "Access granted - You are old enough!"
